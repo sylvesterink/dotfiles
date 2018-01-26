@@ -1,0 +1,11 @@
+http://rss.slashdot.org/Slashdot/slashdotMain ~Slashdot technology news
+http://feeds.arstechnica.com/arstechnica/index ~ArsTechnica technology news
+http://feeds.feedburner.com/DrudgeReportFeed ~Drudge news
+http://www.oann.com/feed/ "~OANN All" news
+http://www.oann.com/category/newsroom/feed/ "~OANN Top" news
+https://www.gamingonlinux.com/article_rss.php "~Linux Gaming" gaming news linux
+https://www.phoronix.com/rss.php ~Phoronix news linux technology
+https://mirrors.slackware.com/feeds/slackware64-current.rss "~Slackware Current" linux changelogs slackware
+https://mirrors.slackware.com/feeds/slackware64-14.2.rss "~Slackware 14.2" linux changelogs slackware
+http://slackbuilds.org/rss/ChangeLog.rss "~Slackbuilds" linux changelogs slackware
+

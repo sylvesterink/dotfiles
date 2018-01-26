@@ -1,0 +1,249 @@
+! xterm ----------------------------------------------------------------------
+
+!*customization: -color
+!xterm*termName: xterm-256color
+xterm*dynamiccolors: true
+!xterm*locale: true
+
+!xterm*font:		-Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
+xterm*font:		-*-terminus-*-*-*-*-14-*-*-*-*-*-ISO8859-*
+xterm*boldFont:		-*-terminus-*-*-*-*-14-*-*-*-*-*-ISO8859-*
+!xterm*font:		-Misc-Fixed-Medium-R-Normal--18-*-*-*-*-*-ISO8859-*
+!xterm*font:		-misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
+!xterm*iconPixmap: ...
+!xterm*iconPixmap:       /usr/share/pixmaps/gnome-gemvt.xbm
+!xterm*iconMask:         /usr/share/pixmaps/gnome-gemvt-mask.xbm
+!xterm*iconName: terminal
+!Mwm*xterm*iconImage: /home/a/a1111aa/xterm.icon
+!xterm*font: terminus-17
+xterm*boldMode: false
+xterm*loginShell: true
+xterm*cursorColor: rgb:00/80/00
+xterm*borderColor: white
+xterm*scrollColor: black
+xterm*visualBell: false
+xterm*saveLines: 2000
+!! xterm.VT100.allowSendEvents: True
+!xterm*allowSendEvents: True
+!xterm*sessionMgt: false
+xterm*eightBitInput:  false
+xterm*metaSendsEscape: true
+!xterm*internalBorder:  10
+!xterm*highlightSelection:  true
+!xterm*VT100*colorBDMode:  on
+!xterm*VT100*colorBD:  blue
+!xterm.VT100.eightBitOutput:  true
+!xterm.VT100.titeInhibit:  false
+
+!xterm*mainMenu*backgroundPixmap:     gradient:vertical?dimension=400&start=gray10&end=gray40
+!xterm*mainMenu*foreground:          white 
+!xterm*vtMenu*backgroundPixmap:       gradient:vertical?dimension=550&start=gray10&end=gray40
+!xterm*vtMenu*foreground:             white
+!xterm*fontMenu*backgroundPixmap:     gradient:vertical?dimension=300&start=gray10&end=gray40
+!xterm*fontMenu*foreground:           white
+!xterm*tekMenu*backgroundPixmap:      gradient:vertical?dimension=300&start=gray10&end=gray40
+!xterm*tekMenu*foreground:            white
+!xterm Profiles (idea from dag wieers)
+xterm*rightScrollBar: true
+xterm*on3Clicks:  regex [^ \n]+
+xterm*on4Clicks: regex .*
+xterm*on5Clicks: line
+
+! terminal colors ------------------------------------------------------------
+! DEFAULT
+!*foreground: gray80
+!*background: rgb:0C/0C/0C
+!*color0: rgb:0C/0C/0C
+!!*background: black
+!!*color0: black
+!*color1: red3
+!*color2: green3
+!*color3: yellow3
+!*color4: DodgerBlue1
+!*color5: magenta3
+!*color6: cyan3
+!*color7: gray90
+!*color8: gray50
+!*color9: red
+!*color10: green
+!*color11: yellow
+!!*color12: blue2  THIS IS TOO DARK
+!*color12: DodgerBlue3
+!*color13: magenta
+!*color14: cyan
+!*color15: white
+!*colorUL: yellow
+!*colorBD: white
+
+! Interesting color theme, when not using default
+! needs testing.
+!*background: rgb:00/00/00
+!*foreground: gray80
+!!*foreground: rgb:7f/7f/7f
+!*color0:     rgb:00/00/00
+!*color1:     rgb:9e/18/28
+!*color2:     rgb:ae/ce/92
+!*color3:     rgb:96/8a/38
+!*color4:     rgb:41/41/71
+!*color5:     rgb:96/3c/59
+!*color6:     rgb:41/81/79
+!*color7:     rgb:be/be/be
+!*color8:     rgb:66/66/66
+!*color9:     rgb:cf/61/71
+!*color10:    rgb:c5/f7/79
+!*color11:    rgb:ff/f7/96
+!*color12:    rgb:41/86/be
+!*color13:    rgb:cf/9e/be
+!*color14:    rgb:71/be/be
+!*color15:    rgb:ff/ff/ff
+
+!! jwr low contrast
+!
+!!black
+!*color0: #222222
+!*color8: #454545
+!
+!!red
+!*color1: #9E5641
+!*color9: #CC896D
+!!green
+!*color2: #6C7E55
+!*color10: #C4DF90
+!!yellow
+!*color3: #CAAF2B
+!*color11: #FFE080
+!!blue
+!*color4: #7FB8D8
+!*color12: #B8DDEA
+!!magenta
+!*color5: #956D9D
+!*color13: #C18FCB
+!!cyan
+!*color6: #4c8ea1
+!*color14: #6bc1d0
+!!white
+!*color7: #808080
+!*color15: #cdcdcd
+!
+!*borderColor: #343434
+!*background: #343434
+!*foreground: #cdcdcd
+
+! -----tangoesque scheme
+*background: #141414
+*foreground: #cdcdcd
+!*foreground: #babdb6
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff6565
+*color9:  #ff8d8d
+! DarkGreen + Green
+*color2:  #93d44f
+*color10: #b4df80
+!*color10: #c8e7a8
+! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+! DarkBlue + Blue
+*color4:  #406aa7
+*color12: #4475b4
+! DarkMagenta + Magenta
+*color5:  #ce5c00
+*color13: #f57900
+!DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
+
+! yeahconsole ----------------------------------------------------------------------
+yeahconsole*restart:		1
+!yeahconsole*background:  	black
+!yeahconsole*foreground: 	white
+!yeahconsole*loginShell:	True
+!yeahconsole*handleWidth:	2
+!yeahconsole*handleColor:	#ed0505
+!yeahconsole*term:		xterm
+!yeahconsole*scrollBar: 	false
+!yeahconsole*reverseVideo: 	false
+!yeahconsole*tintColor: 	#000000
+!yeahconsole*inheritPixmap: 	true
+!yeahconsole*shading:		25
+!yeahconsole*saveLines: 	10000
+!yeahconsole*cursorBlink: 	true
+!yeahconsole*font: 		xft:Terminus:pixelsize=11:antialias=true:hinting=true
+
+yeahconsole*toggleKey: None+F12
+yeahconsole*consoleHeight: 20
+!yeahconsole*aniDelay: 3
+!yeahconsole*stepSize: 5
+yeahconsole*aniDelay: 0
+yeahconsole*stepSize: 0
+!yeahconsole*faceName: Courier:style=Regular
+!yeahconsole*faceSize: 12
+!yeahconsole*font:		-Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
+yeahconsole*font:		-*-terminus-*-*-*-*-16-*-*-*-*-*-ISO8859-*
+yeahconsole*boldFont:		-*-terminus-*-*-*-*-14-*-*-*-*-*-ISO8859-*
+yeahconsole*boldMode: false
+
+! xft  ----------------------------------------------------------------------
+!Xft.dpi: 96
+!Xft.antialias: 1
+!Xft.hinting: 1
+!Xft.hintstyle: hintfull
+!Xft.lcdfilter: lcddefault
+!Xft.rgba: rgb
+!Xft.autohint: 0
+
+! urxvt ----------------------------------------------------------------------
+!urxvt*geometry:     80x25
+urxvt*imLocale:en_US.utf8
+!urxvt*depth:32
+!urxvt*background:rgba:0000/0000/0000/dddd
+!urxvt*foreground:white
+urxvt*underlineColor:blue
+urxvt*cursorColor: rgb:00/80/00
+urxvt*buffered:true
+urxvt*inheritPixmap:false
+!urxvt*transparent:true
+! Shading: 0..100 = darker -1..-100 = lighter
+!urxvt*shading:10
+! Fading: higher number = darker shade on unfocus
+!urxvt*fading:40
+urxvt*urlLauncher:uzbl
+!urxvt*font:xft:Bitstream Vera Sans Mono:pixelsize=14:autohint=true
+!urxvt*boldFont:xft:Bitstream Vera Sans Mono:bold:pixelsize=14:autohint=true
+!urxvt*italicFont:xft:Bitstream Vera Sans Mono:bold:pixelsize=14:autohint=true
+
+!urxvt*font:xft:Terminus:size=10:autohint=true
+!urxvt*boldFont:xft:Terminus:size=10:bold:autohint=true
+!urxvt*italicFont:xft:Terminus:size=10:italic:autohint=true
+
+urxvt*font:xft:Ubuntu Mono:size=13:autohint=true
+urxvt*boldFont:xft:Ubuntu Mono:size=13:bold:autohint=true
+urxvt*italicFont:xft:Ubuntu Mono:size=13:italic:autohint=true
+
+!URxvt.letterSpace: -1
+urxvt*scrollBar:false
+urxvt*scrollStyle:plain
+urxvt*scrollBar_right:true
+urxvt*scrollTtyOutput:false
+urxvt*scrollTtyKeypress:true
+urxvt*scrollWithBuffer:true
+urxvt*jumpScroll:false
+urxvt*saveLines:6400
+urxvt*borderLess:false
+urxvt*loginshell:true
+!urxvt*borderColor:black
+urxvt*scrollBar_floating:true
+!urxvt*internalBorder:4
+urxvt*tripleclickwords:true
+urxvt*perl-ext-common:default,matcher,remote-clipboard
+!urxvt*keysym.M-u:perl:matcher:list
+urxvt*keysym.Control-Up:\033[1;5A
+urxvt*keysym.Control-Down:\033[1;5B
+urxvt*keysym.Control-Left:\033[1;5D
+urxvt*keysym.Control-Right:\033[1;5C
