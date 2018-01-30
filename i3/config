@@ -36,6 +36,9 @@ bindsym $mod+Return exec urxvt
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# lock system
+bindsym $mod+Shift+Pause exec xscreensaver-command -lock
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -157,3 +160,7 @@ bar {
         #status_command ~/.i3/run_conky.sh
         tray_output primary
 }
+
+# Autostart
+# TODO: Consider moving to xinit/xprofile
+exec --no-startup-id xscreensaver -nosplash
