@@ -265,6 +265,17 @@ nnoremap <silent> <F4> :TagbarToggle<CR>
 "   ------- Ack -------
 nnoremap <leader>a :Ack!<Space>
 
+"   ------- FSwitch -------
+nmap <silent> <leader>of :FSHere<cr>
+nmap <silent> <leader>ol :FSRight<cr>
+nmap <silent> <leader>oL :FSSplitRight<cr>
+nmap <silent> <leader>oh :FSLeft<cr>
+nmap <silent> <leader>oH :FSSplitLeft<cr>
+nmap <silent> <leader>ok :FSAbove<cr>
+nmap <silent> <leader>oK :FSSplitAbove<cr>
+nmap <silent> <leader>oj :FSBelow<cr>
+nmap <silent> <leader>oJ :FSSplitBelow<cr>
+nmap <silent> <leader>ot :FSTab<cr>
 
 " --------- MY FUNCTIONS ---------
 " Convenient command to see the difference between the current buffer and the
