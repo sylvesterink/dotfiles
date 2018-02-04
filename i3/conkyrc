@@ -1,0 +1,41 @@
+background        no
+out_to_console    yes
+out_to_x      no
+update_interval   1
+total_run_times   0
+short_units   yes
+pad_percents      3
+use_spacer        left
+
+override_utf8_locale yes
+
+TEXT
+,[
+#Shows current user
+  {"full_text": " [${exec whoami}", "color":"\#ff00f3"},
+#Shows hostname (heart for lack of better symbol)
+  {"full_text": "${exec hostname}] ", "color":"\#6F3BFF"},
+#Shows uploadspeed
+  {"full_text": " U: [${upspeed}] ", "color":"\#ff0000"},
+#Shows downloadspeed
+  {"full_text": " D: [${downspeed}] ", "color":"\#00fff2"},
+#Shows current memory usage with a bar
+  {"full_text": " Mem: [$membar] ", "color":"\#B58900"},
+#Shows current CPU usage with a bar
+  {"full_text": " CPU: [$cpubar] ${hwmon 0 temp 1}C ", "color":"\#00A9B5"},
+  {"full_text": " CPUs: [ ${cpu cpu0}|${cpu cpu1}|${cpu cpu2}|${cpu cpu3} ]", "color":"\#00A9B5"},
+#Bar showing available entropy. Install haveged if you want this to rocket up. Without, /proc/sys/kernel/random/entropy_avail reported on my sysem ~175. With, it reported ~3585
+#  {"full_text": " ~ [$entropy_bar] ", "color":"\#AFB500"},
+#Used partition space
+  {"full_text": " / [${fs_used_perc /}%] ", "color":"\#AFB500"},
+#Used partition space
+  {"full_text": " /home [${fs_used_perc /home}%] ", "color":"\#AFB500"},
+#Shows upime
+#  {"full_text": " [${uptime}] ","color": "\#dc322f"},
+#Shows new email
+  ${if_match ${new_mails /home/sylvester/Mail/apharmdqGmail/INBOX} > 0 }
+  {"full_text": " apharmdq@gmail.com [${new_mails /home/sylvester/Mail/apharmdqGmail/INBOX}] ","color": "\#dc322f"},
+  ${endif}
+#Shows time
+  {"full_text": " [${time %a %d %b} ${time %I:%M:%S%P}] ","color": "\#2fdc57"}
+]
