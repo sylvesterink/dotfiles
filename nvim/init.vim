@@ -146,6 +146,9 @@ if !&sidescrolloff
   set sidescrolloff=5
 endif
 
+" Enable doxygen highlighting
+let g:load_doxygen_syntax=1
+
 
 " --------- PLUGIN SETTINGS ---------
 "   ------- Ack -------
@@ -222,8 +225,9 @@ nnoremap <leader>B :ls<CR>:b<space>
 nnoremap <leader>C :call ToggleCC()<CR>
 
 " " clang-format - Format code to coding style
-" map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
-" imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
+" TODO check if clang file exists first
+map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 
 " Build tagfile
 map <leader>t :!ctags -R --c-kinds=+pl --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
