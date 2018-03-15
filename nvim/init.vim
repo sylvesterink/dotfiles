@@ -166,10 +166,6 @@ let g:colorizer_startup = 0
 " Use newstyle comments
 autocmd FileType cpp,cs,java setlocal commentstring=//\ %s
 
-"   ------- NERDTree -------
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-let NERDTreeAutoCenter = 1
-
 "   ------- Tagbar -------
 let g:tagbar_autofocus = 1
 
@@ -190,7 +186,7 @@ let g:statline_fugitive = 1
 "   ------- Denite -------
 call denite#custom#map('insert', '<Esc>', '<denite:enter_mode:normal>',
             \'noremap')
-call denite#custom#map('normal', '<Esc>', '<NOP>',
+call denite#custom#map('normal', '<Esc>', '<denite:quit>',
             \'noremap')
 call denite#custom#map('insert', '<C-v>', '<denite:do_action:vsplit>',
             \'noremap')
