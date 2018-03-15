@@ -1,42 +1,39 @@
 ! xterm ----------------------------------------------------------------------
 
-!*customization: -color
-!xterm*termName: xterm-256color
+xterm*termName: xterm-256color
 xterm*dynamiccolors: true
-!xterm*locale: true
+xterm*locale: true
 
-!xterm*font:		-Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
-xterm*font:		-*-terminus-*-*-*-*-14-*-*-*-*-*-ISO8859-*
-xterm*boldFont:		-*-terminus-*-*-*-*-14-*-*-*-*-*-ISO8859-*
-!xterm*font:		-Misc-Fixed-Medium-R-Normal--18-*-*-*-*-*-ISO8859-*
-!xterm*font:		-misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
+xterm.vt100.faceName:DejaVu Sans Mono:size=10:autohint=true
+xterm.vt100.boldFont:DejaVu Sans Mono:size=10:bold:autohint=true
+xterm.vt100.italicFont:DejaVu Sans Mono:size=10:italic:autohint=true
+xterm.vt100.renderFont: true
 !xterm*iconPixmap: ...
 !xterm*iconPixmap:       /usr/share/pixmaps/gnome-gemvt.xbm
 !xterm*iconMask:         /usr/share/pixmaps/gnome-gemvt-mask.xbm
 !xterm*iconName: terminal
 !Mwm*xterm*iconImage: /home/a/a1111aa/xterm.icon
-!xterm*font: terminus-17
 xterm*boldMode: false
 xterm*loginShell: true
 xterm*cursorColor: rgb:00/80/00
-xterm*borderColor: white
 xterm*scrollColor: black
 xterm*visualBell: false
-xterm*saveLines: 2000
+xterm*saveLines: 4096
 !! xterm.VT100.allowSendEvents: True
 !xterm*allowSendEvents: True
 !xterm*sessionMgt: false
 xterm*eightBitInput:  false
 xterm*metaSendsEscape: true
-!xterm*internalBorder:  10
+xterm*internalBorder:  0
 !xterm*highlightSelection:  true
 !xterm*VT100*colorBDMode:  on
 !xterm*VT100*colorBD:  blue
 !xterm.VT100.eightBitOutput:  true
 !xterm.VT100.titeInhibit:  false
 
+! Make menus have a nice background
 !xterm*mainMenu*backgroundPixmap:     gradient:vertical?dimension=400&start=gray10&end=gray40
-!xterm*mainMenu*foreground:          white 
+!xterm*mainMenu*foreground:          white
 !xterm*vtMenu*backgroundPixmap:       gradient:vertical?dimension=550&start=gray10&end=gray40
 !xterm*vtMenu*foreground:             white
 !xterm*fontMenu*backgroundPixmap:     gradient:vertical?dimension=300&start=gray10&end=gray40
@@ -100,64 +97,65 @@ xterm*on5Clicks: line
 !! jwr low contrast
 !
 !!black
-!*color0: #222222
-!*color8: #454545
+!*color0: rgb:22/22/22
+!*color8: rgb:45/45/45
 !
 !!red
-!*color1: #9E5641
-!*color9: #CC896D
+!*color1: rgb:9E/56/41
+!*color9: rgb:CC/89/6D
 !!green
-!*color2: #6C7E55
-!*color10: #C4DF90
+!*color2: rgb:6C/7E/55
+!*color10: rgb:C4/DF/90
 !!yellow
-!*color3: #CAAF2B
-!*color11: #FFE080
+!*color3: rgb:CA/AF/2B
+!*color11: rgb:FF/E0/80
 !!blue
-!*color4: #7FB8D8
-!*color12: #B8DDEA
+!*color4: rgb:7F/B8/D8
+!*color12: rgb:B8/DD/EA
 !!magenta
-!*color5: #956D9D
-!*color13: #C18FCB
+!*color5: rgb:95/6D/9D
+!*color13: rgb:C1/8F/CB
 !!cyan
-!*color6: #4c8ea1
-!*color14: #6bc1d0
+!*color6: rgb:4c/8e/a1
+!*color14: rgb:6b/c1/d0
 !!white
-!*color7: #808080
-!*color15: #cdcdcd
+!*color7: rgb:80/80/80
+!*color15: rgb:cd/cd/cd
 !
-!*borderColor: #343434
-!*background: #343434
-!*foreground: #cdcdcd
+!*borderColor: rgb:34/34/34
+!*background: rgb:34/34/34
+!*foreground: rgb:cd/cd/cd
 
 ! -----tangoesque scheme
-*background: #141414
-*foreground: #cdcdcd
-!*foreground: #babdb6
+*borderColor: rgb:14/14/14
+*background: rgb:14/14/14
+*foreground: rgb:cd/cd/cd
+!*foreground: rgb:ba/bd/b6
 ! Black (not tango) + DarkGrey
-*color0:  #000000
-*color8:  #555753
+*color0:  rgb:00/00/00
+*color8:  rgb:55/57/53
 ! DarkRed + Red
-*color1:  #ff6565
-*color9:  #ff8d8d
+*color1:  rgb:ff/65/65
+*color9:  rgb:ff/8d/8d
 ! DarkGreen + Green
-*color2:  #93d44f
-*color10: #b4df80
-!*color10: #c8e7a8
+*color2:  rgb:93/d4/4f
+*color10: rgb:b4/df/80
+!*color10: rgb:c8/e7/a8
 ! DarkYellow + Yellow
-*color3:  #eab93d
-*color11: #ffc123
+*color3:  rgb:ea/b9/3d
+*color11: rgb:ff/c1/23
 ! DarkBlue + Blue
-*color4:  #406aa7
-*color12: #4475b4
+*color4:  rgb:40/6a/a7
+*color12: rgb:44/75/b4
 ! DarkMagenta + Magenta
-*color5:  #ce5c00
-*color13: #f57900
+*color5:  rgb:ce/5c/00
+*color13: rgb:f5/79/00
 !DarkCyan + Cyan (both not tango)
-*color6:  #89b6e2
-*color14: #46a4ff
+*color6:  rgb:89/b6/e2
+*color14: rgb:46/a4/ff
 ! LightGrey + White
-*color7:  #cccccc
-*color15: #ffffff
+*color7:  rgb:cc/cc/cc
+*color15: rgb:ff/ff/ff
 
 ! yeahconsole ----------------------------------------------------------------------
 yeahconsole*restart:		1
@@ -165,11 +163,11 @@ yeahconsole*restart:		1
 !yeahconsole*foreground: 	white
 !yeahconsole*loginShell:	True
 !yeahconsole*handleWidth:	2
-!yeahconsole*handleColor:	#ed0505
+!yeahconsole*handleColor:	rgb:ed/05/05
 !yeahconsole*term:		xterm
 !yeahconsole*scrollBar: 	false
 !yeahconsole*reverseVideo: 	false
-!yeahconsole*tintColor: 	#000000
+!yeahconsole*tintColor: 	rgb:00/00/00
 !yeahconsole*inheritPixmap: 	true
 !yeahconsole*shading:		25
 !yeahconsole*saveLines: 	10000
