@@ -129,13 +129,14 @@ alias sshutdown='sudo /sbin/shutdown -h -P now'
 alias sreboot='sudo /sbin/shutdown -r now'
 alias ussuspend='sudo /usr/sbin/pm-suspend'
 alias ssuspend='(xlock -mode blank &) && sudo /usr/sbin/pm-suspend'
+alias akey='eval `keychain --clear --eval id_rsa`'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 #Make sure urxvt is the default terminal
-export TERMINAL=urxvt
+export TERMINAL=xterm
 export EDITOR=vim
 
 function set_title ()

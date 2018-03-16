@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Make sure xterm is the default terminal
-export TERMINAL=urxvt
+export TERMINAL=xterm
 export EDITOR=vim
 export BROWSER=firefox
 
@@ -65,3 +65,4 @@ alias grep='grep --color'
 alias sshutdown='sudo /sbin/shutdown -h -P now'
 alias ussuspend='sudo /usr/sbin/pm-suspend'
 alias ssuspend='(xlock -mode blank &) && sudo /usr/sbin/pm-suspend'
+alias akey='eval `keychain --clear --eval id_rsa`'
