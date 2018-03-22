@@ -91,6 +91,8 @@ set inccommand=split    " dynamic search preview
 
 " display line numbers
 set number
+" set relative line numbers on by default
+set relativenumber
 
 " GUI STUFF
 "" TODO: Remove until graphical neovim implemented?
@@ -208,6 +210,8 @@ nmap <space> zz
 nmap <s-space> zt
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
+" Shortcut to rapidly toggle `set relativenumber`
+nmap <leader>r :set relativenumber!<CR>
 " Strip trailing whitespaces from file
 nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 " Switch to the directory of the open buffer
