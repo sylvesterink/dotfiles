@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Add bin location for 3rd party binaries
+PATH=/opt/bin:$PATH
+export PATH
+
 #Make sure xterm is the default terminal
 export TERMINAL=xterm
 export EDITOR=vim

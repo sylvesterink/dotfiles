@@ -177,6 +177,9 @@ let g:SignatureMarkTextHLDynamic = 1
 "   ------- Deoplete -------
 let g:deoplete#enable_at_startup = 1
 
+" Close preview window when completion done
+autocmd CompleteDone * silent! pclose!
+
 "   ------- Deoplete-Clang -------
 " TODO: MAKE THIS LESS PLATFORM SPECIFIC!
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-3.8/lib/libclang.so'
@@ -223,6 +226,10 @@ au BufRead,BufNewFile ~/buffer iab <buffer> xh1 ================================
 nnoremap <leader>B :ls<CR>:b<space>
 " Toggle highlight column 80
 nnoremap <leader>C :call ToggleCC()<CR>
+" Easier copy to clipboard
+noremap <leader>y "+y
+" Easier paste from clipboard
+noremap <leader>p "+p
 
 " " clang-format - Format code to coding style
 " TODO check if clang file exists first
@@ -270,6 +277,7 @@ nnoremap <silent> <F4> :TagbarToggle<CR>
 nnoremap <leader>a :Ack!<Space>
 
 "   ------- FSwitch -------
+nmap <silent> <leader><leader> :FSHere<cr>
 nmap <silent> <leader>of :FSHere<cr>
 nmap <silent> <leader>ol :FSRight<cr>
 nmap <silent> <leader>oL :FSSplitRight<cr>
