@@ -87,6 +87,7 @@ set smartcase   " only case-sensitive search if upper-case letters included
 set nowrap
 set sw=4 sts=4 ts=4 et  " use spaces instead of tabs
 set inccommand=split    " dynamic search preview
+set wmh=0       " window minimum height default is useless, so better to hide
 
 
 " display line numbers
@@ -230,6 +231,31 @@ nnoremap <leader>C :call ToggleCC()<CR>
 noremap <leader>y "+y
 " Easier paste from clipboard
 noremap <leader>p "+p
+
+" Quicker moving between windows
+nmap <silent> <A-k> :wincmd k<CR>
+nmap <silent> <A-j> :wincmd j<CR>
+nmap <silent> <A-h> :wincmd h<CR>
+nmap <silent> <A-l> :wincmd l<CR>
+
+" Quicker moving windows
+nmap <silent> <A-K> :wincmd K<CR>
+nmap <silent> <A-J> :wincmd J<CR>
+nmap <silent> <A-H> :wincmd H<CR>
+nmap <silent> <A-L> :wincmd L<CR>
+
+" Quicker resizing windows
+nmap <silent> <A-+> :wincmd +<CR>
+nmap <silent> <A--> :wincmd -<CR>
+nmap <silent> <A->> :wincmd ><CR>
+nmap <silent> <A-<> :wincmd <<CR>
+nmap <silent> <A-_> :wincmd _<CR>
+nmap <silent> <A-w> :wincmd <bar><CR>
+nmap <silent> <A-=> :wincmd =<CR>
+
+" Quicker tabbing
+nmap <silent> <A-t> gt
+nmap <silent> <A-T> gT
 
 " " clang-format - Format code to coding style
 " TODO check if clang file exists first
