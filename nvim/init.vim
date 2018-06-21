@@ -272,8 +272,10 @@ map <leader>t :!ctags -R --c-kinds=+pl --c++-kinds=+pl --fields=+iaS --extra=+q 
 nmap <leader>f :Denite file_rec<CR>
 " Fuzzy search for buffers
 nmap <leader>b :Denite buffer<CR>
-" ctrlp - Open buffer grep
+" Fuzzy search files and buffers
 nmap <leader>g :Denite file_rec buffer<CR>
+" Fuzzy search tag under cursor, select first result
+nmap <leader>] :DeniteCursorWord tag<CR>
 
 "   ------- CamelCaseMotion -------
 "  Using custom mapping because the leader key is used for other tasks
