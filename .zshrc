@@ -41,6 +41,15 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
+# Enable Ctrl-x-e to edit command line
+autoload -U edit-command-line
+zle -N edit-command-line
+# Emacs style
+# bindkey '^xe' edit-command-line
+# bindkey '^x^e' edit-command-line
+# Vi style:
+bindkey -M vicmd z edit-command-line
+
 # Show when in vi-command mode
 precmd() {
   RPROMPT=""
@@ -137,7 +146,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 #Make sure urxvt is the default terminal
 export TERMINAL=xterm
-export EDITOR=vim
+export EDITOR=nvim
 
 function set_title ()
 {
