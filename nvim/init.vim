@@ -59,6 +59,10 @@ Plug 'zchee/deoplete-clang'
 " NOTE: testing
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
+" Vimwiki
+" NOTE: testing
+Plug 'vimwiki/vimwiki'
+
 " TODO: These are for future use
 "Plug 'lervag/vimtex'
 "Plug 'peterhoeg/vim-qml'
