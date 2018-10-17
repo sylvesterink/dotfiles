@@ -55,6 +55,10 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Alternate: Plug 'autozimu/LanguageClient-neovim' (Might be preferred. TODO: Test this one instead)
 Plug 'zchee/deoplete-clang'
 
+" Python syntax improvements
+" NOTE: testing
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
 " TODO: These are for future use
 "Plug 'lervag/vimtex'
 "Plug 'peterhoeg/vim-qml'
