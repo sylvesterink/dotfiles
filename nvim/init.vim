@@ -237,6 +237,10 @@ nmap <silent> <A-k> :wincmd k<CR>
 nmap <silent> <A-j> :wincmd j<CR>
 nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
 
 " Quicker moving windows
 nmap <silent> <A-K> :wincmd K<CR>
@@ -259,8 +263,9 @@ nmap <silent> <A-T> gT
 
 " " clang-format - Format code to coding style
 " TODO check if clang file exists first
-map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
-imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+nmap <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+" This shouldn't be used because <C-K> is already used in insert mode
+" imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 
 " Build tagfile
 map <leader>t :!ctags -R --c-kinds=+pl --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
